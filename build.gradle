@@ -26,6 +26,13 @@ sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-web")
-    testCompile('org.springframework.boot:spring-boot-starter-test')
+     //compile("org.springframework.boot:spring-boot-starter-web")
+   // testCompile('org.springframework.boot:spring-boot-starter-test')
+   // git diff: tell the difference between latest file and the previous file.
+   // jpa is used as ORM(Object Relational mapping) for inserting Object:model attributes to the database table automatically and mysql connector-java is to set up the mysql.  
+
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	runtimeOnly 'mysql:mysql-connector-java'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
